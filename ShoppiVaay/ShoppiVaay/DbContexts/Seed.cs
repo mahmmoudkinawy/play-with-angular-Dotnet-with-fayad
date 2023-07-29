@@ -13,7 +13,7 @@ public class Seed
         }
 
         var products = new Faker<ProductEntity>()
-            .RuleFor(c => c.Name, f => f.Commerce.ProductName())
+            .RuleFor(c => c.Name, f => f.Commerce.ProductName() + "test")
             .RuleFor(c => c.Description, f => f.Commerce.ProductDescription())
             .RuleFor(c => c.Color, f => f.Commerce.Color())
             .RuleFor(c => c.ImageUrl, f => f.Person.Avatar)
